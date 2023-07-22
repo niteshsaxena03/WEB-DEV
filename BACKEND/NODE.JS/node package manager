@@ -1,0 +1,21 @@
+its like a shared library
+
+its open source
+
+its made by contributions of various developers
+
+#sample code-->sillyName library
+
+import generateName from "sillyname";
+
+var sillyName = generateName();
+
+console.log(`my name is ${sillyName}`);
+
+#sample code-->superheroes library
+
+
+import superheroes from "superheroes";
+
+const k=superheroes.random();
+console.log(`my name is ${k}`);
