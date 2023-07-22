@@ -1,1 +1,12 @@
 express.js is used to create a server along with node.js
+
+#sample code
+
+import express from "express";
+const app = express();    -->this will create an app
+const port = 3000;        -->this port is having our website on our localhost
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}.`);
+});
+
