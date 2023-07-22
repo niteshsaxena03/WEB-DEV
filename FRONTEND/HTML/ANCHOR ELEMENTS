@@ -1,0 +1,25 @@
+<a> and </a> represent anchor elements
+we can link a website with the opening <a> tag
+it will redirect us from the written text to the website link embedded
+
+sample code
+
+<h1>My top 5 Favourite Websites</h1>
+
+<ol>
+    <li>
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwif26zqv4GAAxWm4DgGHRCyDZkQFnoECAgQAQ&url=https%3A%2F%2Fwww.producthunt.com%2F&usg=AOvVaw0tXiL_64ei8NSRYE9f8zUw&opi=89978449"> Product Hunt </a>
+    </li>
+    <li>
+        <a href="www.SmashTheWalls.com">Smash The Walls</a>
+    </li>
+    <li>
+        <a href="www.wordle.com">Wordle</a>
+    </li>
+    <li>
+        <a href="www.hackertyper.com">Hacker Typer</a>
+    </li>
+    <li>
+        <a href="www.Stellarium.com">Stellarium</a>
+    </li>
+</ol>
