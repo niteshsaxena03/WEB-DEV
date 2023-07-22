@@ -5,3 +5,29 @@ VOCAB OF HTTP
 3.PATCH-->patching up a resource
 4.POST-->sending a resource
 5.DELETE-->deleting a resource
+
+
+#sample code
+
+import express from "express";
+const app = express();
+const port = 3000;
+
+// this is for home page
+
+app.get("/",(req,res)=>{  
+    res.send("hello");
+})
+
+app.get("/contact",(req,res)=>{
+    res.send("<h1>9811284037</h1>");
+})
+
+app.get("/about",(req,res)=>{
+    res.send("<p>i am nitesh saxena</p>");
+})
+
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}.`);
+});
