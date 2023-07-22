@@ -1,0 +1,7 @@
+VOCAB OF HTTP
+
+1.GET-->requesting resource
+2.PUT-->replace resource
+3.PATCH-->patching up a resource
+4.POST-->sending a resource
+5.DELETE-->deleting a resource
