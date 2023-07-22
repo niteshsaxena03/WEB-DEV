@@ -1,0 +1,34 @@
+1.GROUP SELECTOR->apply one command to both
+sample code
+
+h1,h2{
+    color: blueviolet;
+}
+
+2.CHILD SELECTOR->apply to direct child of parent means only one level
+sample code
+
+.box>.done{
+    color: firebrick;
+}
+
+3.DESCENDENT SELECTOR->apply to direct descendent of ancestor
+sample code
+
+.box li{
+    color: blue;
+}
+
+4.CHAINING SELECTOR->apply where all selectors are true
+sample code
+
+li.done{
+    color:seagreen
+}
+
+5.COMBINING MANY COMBINERS
+sample code
+
+ul p.done{
+    font-size: 0.5rem;
+}
