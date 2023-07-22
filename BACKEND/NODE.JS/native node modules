@@ -1,0 +1,17 @@
+these are built-in modules of node
+
+one of the examples is file system
+
+1.FILE SYSTEM->it is a node module which helps us to access system files
+
+const fs=require("fs");
+
+fs.writeFile("message.txt", "hello from me", (err) => {
+    if (err) throw err;
+    console.log('The file has been saved!');
+  });
+
+fs.readFile('./message.txt',"utf8", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
