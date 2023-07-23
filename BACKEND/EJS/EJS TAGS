@@ -1,0 +1,6 @@
+<%= %>-->JS OUTPUT
+<% %>-->JS EXECUTION
+<%- %>-->RENDER HTML
+<%% %%>-->SHOWS <% %>
+<%# %>-->WRITING COMMENT
+<%- include(....)%>-->INCLUDE ANOTHER EJS FILE
