@@ -1,0 +1,47 @@
+EJS means embedded javascript
+
+it can be used to write javascript in html
+
+#ejs code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey, it's <%= dayType %>, <%= advice %>!</h1>
+</body>
+</html>
+
+#js code
+
+import express from "express";
+
+const app=express();
+const port=3000;
+
+app.get("/",(req,res)=>{
+    const today = new Date();
+    const day = today.getDay();
+
+    let a="WEEKDAY";
+    let b="WORK HARD";
+
+    if(day===0||day===1){
+        a="WEEK END";
+        b="MOJ MARO";
+    }
+
+    res.render("index.ejs",{
+        datatype:a,
+        advice:b,
+    });
+})
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}.`);
+  });
+  
