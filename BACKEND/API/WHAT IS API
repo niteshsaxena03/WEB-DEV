@@ -1,0 +1,21 @@
+API IS LIKE A BRIDGE BETWEEN 2 SOFTWARES
+
+#LOCATING SATELLITE USING API
+
+https://api.wheretheiss.at/v1/satellites/25544
+
+{
+    "name": "iss",
+    "id": 25544,
+    "latitude": -3.3247603253023,
+    "longitude": -8.3714765362728,
+    "altitude": 417.96861725014,
+    "velocity": 27581.16585214,
+    "visibility": "daylight",
+    "footprint": 4497.114224468,
+    "timestamp": 1690206478,
+    "daynum": 2460150.0749769,
+    "solar_lat": 19.8401610078,
+    "solar_lon": 334.64666329561,
+    "units": "kilometers"
+}
