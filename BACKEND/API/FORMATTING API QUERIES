@@ -1,0 +1,14 @@
+1.ENDPOINT
+-->https://bored-api.appbrewery.com/random
+
+here random is an endpoint
+
+2.QUERY
+-->https://bored-api.appbrewery.com/filter?type=education
+
+here education is a query parameter
+
+3.PATH
+--> https://bored-api.appbrewery.com/activity/3943506
+
+here 3943506 is a path parameter
