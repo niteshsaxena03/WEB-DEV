@@ -1,0 +1,7 @@
+JSON means JAVASCRIPT OBJECT NOTATION
+
+https://jsonviewer.stack.hu  -->this site help in viewing json
+
+data=JSON.parse(recipeJSON)  ->parse function is used to shorter down the content
+
+data=JSON.stringify(recipeJSON)-->stringify function is used to expand the content
