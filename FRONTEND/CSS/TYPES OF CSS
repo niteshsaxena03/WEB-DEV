@@ -1,0 +1,72 @@
+CSS has 3 types-> INLINE,INTERNAL AND EXTERNAL
+
+1.INLINE
+this type of css is used for a single line only
+sample code
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inline</title>
+</head>
+
+<body>
+<h1 style="color: blue">Style Me in Blue</h1>
+
+</body>
+
+</html>
+
+2.INTERNAL
+this type of css is used for a single webpage only
+sample code
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Internal</title>
+</head>
+
+<body>
+<h1>Style Me in Red!</h1>
+<style>
+  html{
+    color: red;
+  }
+</style>
+</body>
+
+</html>
+
+3.EXTERNAL
+this type of css is used in majority cases
+can be used for multiple pages
+sample code
+#to be written in an html file and linked to another css file
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Internal</title>
+</head>
+
+<body>
+<h1>Style Me in Red!</h1>
+<style>
+  html{
+    color: red;
+  }
+</style>
+</body>
+
+</html>
+
+#to be written in a css file
+html{
+    color: green ;
+}
