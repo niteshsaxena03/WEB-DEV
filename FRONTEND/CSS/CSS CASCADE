@@ -1,0 +1,8 @@
+CASCADING means determining the level of significance of a command
+it has 4 parts
+1.position-->lowest level is most important
+2.specificity-> ID>ATTRIBUTE>CLASS>ELEMENT
+3.type->INLINE>INTERNAL>EXTERNAL
+4.importance->using importance keyword is most significant
+
+IMPORTANCE>TYPE>SPECIFICITY>POSITION
