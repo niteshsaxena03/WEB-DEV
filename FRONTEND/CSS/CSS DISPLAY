@@ -1,0 +1,31 @@
+#3 TYPES
+1.BLOCK->it will occupy a line and its size can be changes
+
+2.INLINE->it will stay in same line and its size cant be changes
+
+3.INLINE-BLOCK->it will stay in same line and its size can be changed 
+
+4.NONE-> its displays nothing
+
+sample code
+
+.red {
+      display:block;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+    .green {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+
+    .blue {
+      display: inline;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
