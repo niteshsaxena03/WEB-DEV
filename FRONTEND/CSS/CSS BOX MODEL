@@ -1,0 +1,32 @@
+height and weight are used to create a box
+border is used to add a border line and we can add specific values to border in clockwise direction
+margin is used for outside space of a box
+padding is used for creating inside space in a box
+
+sample code
+
+#a{
+    height: 200px ;
+    width: 200px;
+    background-color: cadetblue;
+    padding: 20px;
+    border: 10px solid black;
+}
+#b{
+    height: 200px ;
+    width: 200px;
+    background-color: gold;
+    border: solid black;
+    border-width: 20px 10px;
+    margin-left: 260px;
+}
+#c{
+    height: 200px ;
+    width: 200px;
+   background-color: indianred;
+    border: 10px solid black;
+    margin-left: 40px;
+}
+p{
+    margin: 0px;
+}
