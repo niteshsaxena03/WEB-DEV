@@ -1,0 +1,19 @@
+2 DIRECTIONS->VERTICAL AND HORIZONTAL
+
+1.VERTICAL->row form means main axis
+2.HORIZONTAL->column form means cross axis
+
+flex basis->sets up the height or width
+
+sample code
+
+   .container {
+      color: white;
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-direction: column;
+   
+    }
+    .container div{
+      flex-basis: 100px;
+    }
