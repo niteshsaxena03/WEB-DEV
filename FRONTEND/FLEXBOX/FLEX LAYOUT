@@ -1,0 +1,9 @@
+1.ORDER->allows us to set a desired position for a given element,it works on child
+
+2.FLEX-WRAP->it is used to fit the extra elements down if there is no space on page
+
+3.JUSTIFY-CONTENT->used to provide spacing in the line as left spacing or right spacing or centering
+
+4.ALIGN-ITEMS->used to provide top spacing or bottom spacing or centering
+
+5.ALIGN-SELF->works on a single item only when flex is wrapped
