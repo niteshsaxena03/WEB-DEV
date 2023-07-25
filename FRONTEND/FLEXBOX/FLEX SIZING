@@ -1,0 +1,37 @@
+#PRIORITY ORDER
+CONTENT WIDTH<WIDTH<FLEX BASIS<MIN/MAX WIDTH
+
+1. MAX WIDTH-> sees the largest line to set the max width
+2. MIN WIDTH->sees the largest word to determine min width
+3. FLEX-GROW->determines whether the items can grow or not
+4. FLEX-SHRINK->determines whether the items can shrink or not
+
+#flex:1 ->it means text can grow as well as shrink
+sample code
+.container {
+
+  justify-content:space-between;
+}
+  
+.container > * {
+
+}
+
+.item1 {
+  
+flex-basis:200px;
+}
+
+.item2 {
+
+flex-basis:200px;
+flex-shrink:0;
+flex-grow:1;
+}
+
+.item3 {
+  flex-grow:1;
+  flex-shrink:0;
+  flex-basis:400px;
+
+}
