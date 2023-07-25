@@ -1,0 +1,76 @@
+#TYPES OF FONT SIZES
+1.1px->1/96 inch
+2.1pt->1/72 inch
+3.1em->100% of parent
+4.1rem->100% of root
+
+sample code
+<style>
+    #pixel {
+      font-size: 20px;
+    }
+
+    #point {
+      font-size: 20pt;
+    }
+
+    #em {
+      font-size: 1em;
+    }
+
+    #rem {
+      font-size: 1rem;
+    }
+
+    footer {
+      font-size: 12pt;
+    }
+
+    html {
+      font-size: xx-large;
+    }
+  </style>
+
+#TYPES OF FONT WEIGHTS
+1.bold
+2.normal
+3.lighter/bolder->creates a difference of 100
+4.number from 100-900
+
+#TYPES OF FONT FAMILIES
+-->comma means the backup option
+
+ #helvetica {
+      font-family: Helvetica, sans-serif;
+    }
+
+    #arial {
+      font-family: Arial, sans-serif;
+    }
+
+    #serif {
+      font-family: serif;
+    }
+
+    #sans-serif {
+      font-family: sans-serif;
+    }
+
+    #cursive {
+      font-family: cursive;
+    }
+
+    #monospace {
+      font-family: monospace;
+    }
+
+    #fantasy {
+      font-family: fantasy;
+    }
+
+#TYPES OF TEXT ALLIGNMENT
+->there are many types such as left,right,center etc
+sample code
+#e{
+    text-align: right;
+   }
