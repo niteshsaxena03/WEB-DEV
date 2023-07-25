@@ -1,0 +1,29 @@
+1.selecting a particular type of data->apply red to paragraph
+sample code
+p{
+  color:red
+}
+
+2.selecting a particular class
+sample code
+.note{
+  font-size: 20px;
+}
+
+3.selecting a particular id
+sample code
+#id-selector-demo{
+  color:green
+}
+
+4.selecing a particular value
+sample code
+li[value="4"]{
+  color:blue
+}
+
+5.selecting everything
+sample code
+*{
+  text-align: center
+}
