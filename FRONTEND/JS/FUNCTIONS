@@ -1,0 +1,49 @@
+#SYNTAX
+
+function getmilk(){
+alert("purchase the milk");
+}
+
+function main(){
+ k();
+ turnLeft();
+ k();
+}
+function k(){
+   move();
+   move();
+   move();
+   move();
+}
+
+
+#TAKING INPUT IN FUNCTION
+
+function getMilk(bottles) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  var number=bottles/1.5;
+  console.log("it can buy "+Math.floor(number)+" bottles");
+}
+
+getMilk(10);
+
+#GIVING OUTPUT AS WELL AS TAKING INPUT
+
+use the return statement to give output
