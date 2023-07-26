@@ -1,0 +1,14 @@
+#CREATING AN OBJECT WITH FUNCTIONS
+
+function housekeeper2(name,age,ability){
+this.name=name;
+ this.age=age;
+ this.hasability=ability;
+ this.clean=function(){
+  alert("cleaning is started");
+ }
+ 
+}
+
+var h2=housekeeper2("a",12,"yes");
+h2.clean();
