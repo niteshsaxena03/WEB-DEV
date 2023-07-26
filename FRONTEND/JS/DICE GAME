@@ -1,0 +1,60 @@
+#HTML CODE
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="./images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="./images/dice6.png">
+      </div>
+
+    </div>
+
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+
+  <footer>
+    www 🎲 App Brewery 🎲 com
+   
+  </footer>
+</html>
+
+
+#JS CODE
+
+var k=Math.random()*6;
+var randomNumber1=Math.floor(k)+1;
+var randomNumber2=(Math.floor(Math.random()*6))+1;
+
+var image1="dice"+randomNumber1+".png";
+var image2="dice"+randomNumber2+".png";
+
+document.querySelector(".img1").setAttribute("src","./images/"+ image1);
+document.querySelector(".img2").setAttribute("src","./images/"+image2);
+
+
+if(randomNumber1>randomNumber2){
+    document.querySelector("h1").textContent="PLAYER 1 WINS";
+}
+else if(randomNumber2>randomNumber1){
+    document.querySelector("h1").textContent="PLAYER 2 WINS";
+}
+else{
+    document.querySelector("h1").textContent="ITS A DRAW";
+}
