@@ -1,0 +1,17 @@
+#RANDOM MODULE
+
+CREATING A RANDOM DICE
+
+var n=Math.random();
+n=n*6;
+n-Math.floor(n)+1;
+console.log(n);
+
+CREATING A LOVE CALCULATOR
+
+var a=prompt("enter boy name");
+var b=prompt("enter girl name");
+var c=Math.random();
+c=c*100;
+d=Math.floor(c)+1;
+alert("the love percent is "+d+"%");
