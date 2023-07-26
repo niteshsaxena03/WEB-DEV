@@ -1,0 +1,12 @@
+jQuery is basically a framework/library which we can use in our code to make it easier
+
+$->THIS SIGN IS USED IN PLACE OF document.querySelector
+
+#how to include jquery
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+#sample code in JS
+
+$("h1").css("color","red");
+
+#we can use a minifier to shorten our code
