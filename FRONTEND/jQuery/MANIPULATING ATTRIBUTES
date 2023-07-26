@@ -1,0 +1,7 @@
+#HTML
+
+  <a href="https://www.google.com">Search</a>
+
+#JS
+
+$("a").attr("href","https://www.yahoo.com");
