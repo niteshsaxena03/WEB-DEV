@@ -1,0 +1,11 @@
+#CONSTRUCTOR FUNCTION
+
+function bellboy(name,age,permit) {
+ this.name=name;
+ this.age=age;
+ this.workpermit=permit;
+}
+
+#OBJECT
+
+var bel1=new bellboy("abc",21,"yes");
