@@ -1,0 +1,9 @@
+Its a way to protect out api from unauthorised access
+
+1.no authentication->full access to all
+
+2.basic authentication->requires user ID & password
+
+3.API key authorization->it requires a special api key
+
+4.token based authentication->username and password are converted into a token
