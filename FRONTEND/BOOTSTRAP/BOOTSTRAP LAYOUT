@@ -1,0 +1,25 @@
+BOOTSTRAP has a 12 part layout
+means a row is divided into 12 parts
+
+TYPES OF SIZES
+1.small-> sm
+2.medium-> md
+3.large-> lg
+4.extra large-> xl
+5.extra extra large-> xxl
+
+DIVIDING FOR MOBILE AND DESKTOP SCREEN
+
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">Column 1</div>
+    <div class="col-lg-3 col-sm-6">Column 2</div>
+    <div class="col-lg-3 col-sm-6">Column 3</div>
+  </div>
+
+
+DIVIDING BY COLUMN SIZES
+
+ <div class="row">
+        <div class="col-xxl-1 col-xl-2 col-sm-12 col-md-6 col-lg-4">Column 1</div>
+        <div class="col-xxl-11 col-xl-10 col-sm-12 col-md-6 col-lg-8">Column 2</div>
+      </div>
