@@ -1,0 +1,10 @@
+JAVASCRIPT follows all arithematic operators in their respective precedence
+
+for example
+
+var da=prompt("enter dog age");
+var ha=(da-2)*4+21;
+alert("your age will be "+ha);
+
+
+Increment and Decrement operator also works in javascript
