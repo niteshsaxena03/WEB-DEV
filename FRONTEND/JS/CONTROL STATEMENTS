@@ -1,0 +1,15 @@
+IF & ELSE ARE USED AS CONTROL STATEMENTS
+
+var a=prompt("enter boy name");
+var b=prompt("enter girl name");
+var c=Math.random();
+c=c*100;
+d=Math.floor(c)+1;
+alert("the love percent is "+d+"%");
+
+if(d>80){
+  alert("you love each other like crazy");
+}
+else{;
+  alert("not much love left")
+}
