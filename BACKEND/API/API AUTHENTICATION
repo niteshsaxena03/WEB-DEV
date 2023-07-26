@@ -1,9 +1,69 @@
 Its a way to protect out api from unauthorised access
 
 1.no authentication->full access to all
+#sample code
+
+app.get("/noAuth", async (req, res) => {
+  try {
+    const result = await axios.get(API_URL + "/random");
+    res.render("index.ejs", { content: JSON.stringify(result.data) });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
+
 
 2.basic authentication->requires user ID & password
+#sample code
+
+app.get("/basicAuth", async (req, res) => {
+  try {
+    const result = await axios.get(
+      API_URL + "/all?page=2",
+      {},
+      {
+        auth: {
+          username: yourUsername,
+          password: yourPassword,
+        },
+      }
+    );
+    res.render("index.ejs", { content: JSON.stringify(result.data) });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
 
 3.API key authorization->it requires a special api key
+#sample code
+
+app.get("/apiKey", async (req, res) => {
+  try {
+    const result = await axios.get(API_URL + "/filter", {
+      params: {
+        score: 5,
+        apiKey: yourAPIKey,
+      },
+    });
+    res.render("index.ejs", { content: JSON.stringify(result.data) });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
+
 
 4.token based authentication->username and password are converted into a token
+#sample code
+
+const config = {
+  headers: { Authorization: `Bearer ${yourBearerToken}` },
+};
+
+app.get("/bearerToken", async (req, res) => {
+  try {
+    const result = await axios.get(API_URL + "/secrets/2", config);
+    res.render("index.ejs", { content: JSON.stringify(result.data) });
+  } catch (error) {
+    res.status(404).send(error.message);
+  }
+});
