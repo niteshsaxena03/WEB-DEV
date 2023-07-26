@@ -1,0 +1,15 @@
+JAVASCRIPT is a language which adds behavious to a website
+
+It makes the website do various things
+
+for example
+prompt("your name");-->it means taking input
+alert("hello");-->it means printing output  
+
+
+
+#DATA TYPES OF JAVASCRIPT
+
+1.BOOLEAN
+2.NUMBERS
+3.STRINGS
