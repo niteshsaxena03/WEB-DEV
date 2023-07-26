@@ -1,0 +1,23 @@
+GRID is majorly used in case of 2D structures
+1. grid-template-columns->used for specifying column ratio or size
+2. grid-template-rows->used for specifying row ratio or size
+
+sample code 
+
+ .container{
+      display: grid;
+      gap:0px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 800px;
+      width: 800px;
+      
+    }
+    .white{
+      background-color:#f0d9b5 ;
+     
+    }
+    .black{
+      background-color:#b58863 ;
+     
+    }
