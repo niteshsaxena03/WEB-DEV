@@ -1,0 +1,18 @@
+#JS
+
+$("h1").click(function(){
+$("h1").css("color","blue");
+});
+
+
+$("button").click(function(){
+    $("h1").css("color","green");
+});
+
+$(document).keydown(function(event){
+    $("h1").text(event.key);
+});
+
+$("h1").on("mouseover",function(){
+    $("h1").css("color","blue");
+});
