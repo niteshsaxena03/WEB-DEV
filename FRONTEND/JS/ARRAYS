@@ -1,0 +1,37 @@
+var array1=["a","b","c","d","e"];
+var k=prompt("enter name");
+if(array1.includes(k)){
+alert("welcome");
+}
+else{
+alert("go away");
+}
+
+
+var output=[];
+var count=1;
+
+function fizzbuzz(){
+  output.push(count);
+  count++;
+  if(count%3===0){
+    alert("fizz");
+  }
+  else if(count%5===0){
+    alert("buzz");
+  }
+  else if(count%3===0 && count%5===0){
+    alert("fizzbuzz");
+  }
+  else{
+    alert(output);
+  }
+}
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
+fizzbuzz();
