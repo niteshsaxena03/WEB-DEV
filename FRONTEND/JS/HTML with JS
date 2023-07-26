@@ -1,0 +1,25 @@
+#MODIFYING HTML
+
+#queryselector is better tha get element
+
+document.firstElementChild.lastElementChild.lastElementChild.lastElementChild.innerHTML = "nitesh";
+
+document.getElementsByTagName("li")[2].style.color="purple";
+
+document.getElementById("title").innerHTML="nitesh";
+
+document.querySelector(".btn");
+
+#CHANGING COLOUR
+document.querySelector("a").style.color="red";
+
+document.querySelector("button").style.backgroundColor="yellow";
+
+#ADDING CLASSES
+document.querySelector("h1").classList.add("huge");
+
+#SELECTING TEXT
+document.querySelector("a").textContent="nitesh";
+
+#CHANGING ATTRIBUTES
+document.querySelector("a").setAttribute("href","https://www.bing.com");
