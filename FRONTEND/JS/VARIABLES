@@ -1,0 +1,13 @@
+#syntax
+
+var name="nitesh";
+
+alert(name);  -->this will generate a pop up with name nitesh
+
+#RULES FOR NAMING VARIABLE
+
+1.variables must have meaningful names
+2.keywords must not be used as identifiers
+3.variable should not begin with numbers
+4.no spacing within variables
+5.no special characters 
