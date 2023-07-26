@@ -1,0 +1,14 @@
+
+
+#USING JQUERY FOR MANIPULATING STYLES
+
+#CSS
+
+.big{
+    font-size: 10rem;
+    background-color: red;
+}
+
+#JS
+
+$("h1").addClass("big");
