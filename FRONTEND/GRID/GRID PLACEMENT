@@ -1,0 +1,23 @@
+We can use grid to place elements in any order and in any shape
+
+1.SPAN->it means how much grid cells(small squares) an element will occupy
+2.ORDER->it means the order in which elements will occupy the grid cells
+3.GRID AREA->it allows an element to occupy grid cells by specifying the indexes of lines
+
+sample code
+
+ .cowboy {
+      background-color: #00B9FF;
+      grid-column: span 2;
+    }
+
+  .astronaut {
+      background-color: #03989E;
+      order: 1;
+      grid-column: span 2;
+  }
+ .astronaut {
+      background-color: #03989E;
+      order: 1;
+      grid-area: 2 / 1 / 3 / 3;
+    }
