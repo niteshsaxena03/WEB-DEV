@@ -1,0 +1,30 @@
+#CONCATENATION
+
+var name="nitesh";
+var har="hello";
+alert(har+" "+name);
+
+this will create a pop up with hello nitesh
+
+#LENGTH
+
+var write=prompt("write your characters");
+var len=write.length;
+var remain=280-len;
+
+alert("you have written   "+len+"  characters and now you have  "+remain+"  characters left");
+
+#SLICING
+
+var write=prompt("write your characters");
+var sl=write.slice(0,140);
+alert(sl);
+
+#CASES
+
+var name=prompt("write your name");
+name=name.toLowerCase();
+var first=name.slice(0,1);
+first=first.toUpperCase();
+var second=name.slice(1,name.length);
+alert("hello "+first+second);
