@@ -1,0 +1,13 @@
+we can link multiple pages to each other using multiple tags
+we can link a picture to a webpage using anchor and image tags
+image tag can be used within anchor tag and vice versa
+
+sample code
+
+<h1>Welcome to My Website!</h1>
+<!-- Add an image of yourself that links to the about page -->
+<a href="../4.1 Webpages/public/about.html"><img src="./assets/images/cat.png"/></a>
+
+<hr />
+<!-- Add a link to your contact me page here -->
+<a href="./public/contact.html ">Contact me</a>
