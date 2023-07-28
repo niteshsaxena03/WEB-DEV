@@ -3,3 +3,4 @@ UPDATE products SET price=0.80 WHERE id=2
 
 #adding column
 ALTER TABLE products ADD stock int
+
