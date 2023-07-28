@@ -8,3 +8,12 @@ RELATIONAL->SQL which is more schemed-->MySQL-->less scalable(vertically)
 
 NON RELATIONAL->NOSQL which is more flexible-->MongoDB-->highly scalable(horizontally)
 
+#OPERATIONS TO BE PERFORMED
+
+1.create
+2.read
+3.update
+4.delete
+
+also known as CRUD
+
