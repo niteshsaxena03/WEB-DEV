@@ -1,0 +1,8 @@
+#SELECTING EVERYTHING
+SELECT * FROM products 
+
+#selecting some
+SELECT name,price FROM products 
+
+#using where
+SELECT * FROM products WHERE id=1
