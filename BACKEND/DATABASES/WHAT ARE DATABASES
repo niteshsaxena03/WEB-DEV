@@ -13,7 +13,7 @@ NON RELATIONAL->NOSQL which is more flexible-->MongoDB-->highly scalable(horizon
 1.create
 2.read
 3.update
-4.destroy
+4.delete
 
 also known as CRUD
 
