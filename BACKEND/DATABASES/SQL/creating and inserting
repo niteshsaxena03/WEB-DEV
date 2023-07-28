@@ -1,0 +1,17 @@
+#CREATING TABLE
+
+CREATE TABLE products(
+  id INT NOT NULL,
+  name STRING,
+  price MONEY,
+  PRIMARY KEY (id)
+  )
+
+#INSERTING
+1. every column
+INSERT INTO products
+VALUES (1,"pen",1.20)
+
+2.specific columns
+INSERT INTO products(id,name)
+VALUES (2,"pencil")
