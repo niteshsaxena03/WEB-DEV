@@ -1,0 +1,21 @@
+#FOREIGN KEY
+CREATE TABLE orders(
+  id int not NULL,
+  order_number int,
+  customer_id int,
+  product_id int,
+  PRIMARY key (id),
+  FOREIGN key (customer_id) REFERENCES demo(ID),
+  FOREIGN key (product_id) REFERENCES products(id),
+  )
+
+#INNER JOINS
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+#JOINING THREE TABLES
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
