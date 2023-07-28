@@ -1,0 +1,10 @@
+databases are a kind of storage house
+
+we can store all our data in our data
+
+its of two types relational and non relational
+
+RELATIONAL->SQL which is more schemed-->MySQL-->less scalable(vertically)
+
+NON RELATIONAL->NOSQL which is more flexible-->MongoDB-->highly scalable(horizontally)
+
