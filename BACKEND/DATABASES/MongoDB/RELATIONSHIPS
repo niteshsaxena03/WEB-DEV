@@ -1,0 +1,22 @@
+#relation between mutiple elements
+
+db.products.insert(
+  {
+    _id:3,
+    name:"rubber",
+    price:1.30,
+    stock:43,
+    reviews:[
+      {
+        author:"nitesh",
+        rating:5,
+        review:"noice"
+        },
+      {
+        author:"saxena",
+        rating:2,
+        review:"overrated",
+        }
+      ]
+    }
+  )
