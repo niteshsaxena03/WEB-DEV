@@ -1,0 +1,8 @@
+#ADDING NEW COLUMN
+
+db.products.updateOne({_id:1},{$set:{stock:32}})
+db.products.updateOne({_id:2},{$set:{stock:12}})
+
+#for multiple addition
+
+db.collection.updateMany()
