@@ -1,0 +1,5 @@
+#deleting one record
+db.products.deleteOne({_id:2})
+
+#deleting many
+db.collection.deleteMany()
