@@ -1,0 +1,10 @@
+#FINDING 
+#all data
+db.products.find()
+
+#specific data
+db.products.find({name:"pen"})
+
+db.products.find({price:{$gt:1}}) //return where price>1
+
+db.products.find({_id:1},{name:1}) //returns only id and name
