@@ -1,0 +1,11 @@
+#COLLECTION HAS SAME FUNCTION AS TABLES OF SQL
+
+#new database
+use shopdb
+
+#new collection
+db.products.insertOne({_id:1,name:"pen",price:1.20})
+db.products.insertOne({_id:2,name:"pencil",price:0.80})
+
+#to create multiple collection
+db.collection.insertMany()
