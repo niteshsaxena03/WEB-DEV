@@ -1,1 +1,19 @@
 
+#JOINING 
+
+const pineapple=new Fruit({
+  name:"pineapple",
+  rating:9,
+  review:"nice",
+ })
+
+ pineapple.save();
+
+Person.updateOne({name:"john"},{favorite:pineapple},function(err){
+  if(err){
+    console.log(err);
+  }
+  else{
+    console.log("updated");
+  }
+ })
