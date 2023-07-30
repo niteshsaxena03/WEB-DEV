@@ -1,0 +1,21 @@
+#UPDATING
+
+Fruit.updateOne({_id:"abc"},{name:"peach"},function(err){
+  if(err){
+    console.log(err);
+  }
+  else{
+    console.log("updated");
+  }
+})
+
+#DELETING
+
+Fruit.deleteOne({name:"peach"},function(err){
+  if(err){
+    console.log(err);
+  }
+  else{
+    console.log("deleted");
+  }
+});
