@@ -1,0 +1,16 @@
+#there are various built in validators in mongoose which we can use
+
+const frschema=new mongoose.Schema({
+  name:{
+    type:String,
+    required:[true],
+  }
+  rating:{
+    type:Number,
+    min:1,
+    max:10,
+  }
+  review:{
+    type:String,
+  }
+});
