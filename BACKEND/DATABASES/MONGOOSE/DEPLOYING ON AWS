@@ -1,0 +1,7 @@
+#MONGOOSE CONNECTION
+
+mongoose.connect("mongodb+srv://niteshsaxena03:1234abcd@cluster0.kimg1jr.mongodb.net/<name of database>");
+
+#MONGO TERMINAL COMMAND
+
+./mongo "mongodb+srv://cluster0.kimg1jr.mongodb.net/" --username niteshsaxena03
