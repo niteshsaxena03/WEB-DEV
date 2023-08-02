@@ -1,0 +1,11 @@
+
+app.route("/articles:/titele")
+ 
+  .get(async (req, res) => {
+    try {
+      const foundArticles = await Article.findOne({title:req.params.title});
+      res.send(foundArticles);
+    } catch (err) {
+      res.status(404).json({ error: "Articles 4O4 -->: " + err });
+    }
+  })
