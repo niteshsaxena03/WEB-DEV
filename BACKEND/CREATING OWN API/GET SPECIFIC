@@ -1,5 +1,4 @@
-
-app.route("/articles:/titele")
+app.route("/articles/:title")
  
   .get(async (req, res) => {
     try {
