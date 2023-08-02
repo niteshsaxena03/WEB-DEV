@@ -1,0 +1,9 @@
+app.delete(async (req, res) => {
+    try {
+      const result = await Article.deleteMany({});
+      console.log("Successfully deleted all articles!(O.O)\n", result);
+      res.status(204).json("Successfully deleted all articles!(O.O)");
+    } catch (err) {
+      res.status(500).json({ error: "Deletion failed -->: " + err });
+    }
+  });
