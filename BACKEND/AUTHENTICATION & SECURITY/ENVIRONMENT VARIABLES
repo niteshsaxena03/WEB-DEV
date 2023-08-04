@@ -1,0 +1,7 @@
+# .env file
+
+SECRET=mysecret.
+
+#app.js
+
+userSchema.plugin(encrypt,{secret:process.env.SECRET,encryptedFields:["password"]}); 
