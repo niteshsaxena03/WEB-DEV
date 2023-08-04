@@ -1,1 +1,35 @@
+#REGISTER
 
+app.post("/register",function(req,res){
+    const newuser=new User({
+        email: req.body.username,
+        password:req.body.password
+   })
+   async function saveModel() {
+    try {
+      const result = await newuser.save();
+      // Handle the successful result
+    } catch (error) {
+      console.log(error);
+    }
+  }
+})
+
+#LOGIN
+
+app.post("/login",function(req,res){
+    const username=req.body.username;
+    const password=req.body.password;
+
+    User.findOne({ email: username }, (err, founduser) => {
+        if (err) {
+          console.error('Error while finding user:', err);
+        } else if (founduser) {
+             if(founduser.password===password){
+                req.render("secrets");
+             }
+        } else {
+          console.log('User not found.');
+        }
+      });
+})
