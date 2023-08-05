@@ -1,0 +1,64 @@
+const session=require("express-session");
+const passport=require("passport");
+const passportLM=require("passport-local-mongoose");
+
+
+app.use(session({
+  secret:"out little secret",
+  resave:false,
+  saveUninitialized:false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+userSchema.plugin(passportLM);
+
+passport.use(User.createStrategy());
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+#REGISTER
+app.post("/register", function(req, res) {
+  User.register({
+    username: req.body.username
+  }, req.body.password, function(err, user) {
+    if (err) {
+      console.log("Error in registering.", err);
+      res.redirect("/register");
+    } else {
+      passport.authenticate("local")(req, res, function() {
+        res.render("secrets");
+      });
+    }
+  });
+});
+
+#LOGIN
+app.post("/login",function(req,res){
+  const user=new User({
+      username :req.body.username,
+      password: req.body.password
+  });
+  req.login(user,function(err){
+      if(err)
+      {
+          console.log(err);
+      } else
+      {
+          passport.authenticate("local")(req,res,function(){
+              res.redirect("/secrets");
+          })
+      }
+  })
+});
+
+#LOGOUT
+app.get('/logout', function (req, res, next) {
+  req.logout(function (err) {
+      if (err) {
+          return next(err);
+      }
+      res.redirect('/');
+      console.log('USER NOW LOGGED OUT');
+  });
+});
