@@ -1,0 +1,15 @@
+const bcrypt=require("bcrypt");
+const saltRounds=10;
+
+ bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
+        // Store hash in your password DB.
+    const newuser=new User({
+        email: req.body.username,
+        password:hash
+   })
+
+bcrypt.compare(password,data.password, function(err, result) {
+               if(result===true){
+                req.render("secrets");
+               }     
+        }
