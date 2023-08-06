@@ -2,10 +2,17 @@ BABEL-->it is a compilor which can convert modern js code into native js code an
 
 JSX->its a method to use react
 
+#USING VERSION 16.11.0
+
 import react from "react";
 import reactdom from "react-dom";
 
 reactdom.render(<div>
-   <h1>HELLO</h1>
-   <p>this is a paragraph</p></div>,
-   document.getElementById("root"));
+  <h1>MY FAVORITE FOOD</h1>
+  <ul>
+    <li>shahi paneer</li>
+    <li>pizza</li>
+    <li>burger</li>
+  </ul>
+  </div>,
+  document.getElementById("root"));
