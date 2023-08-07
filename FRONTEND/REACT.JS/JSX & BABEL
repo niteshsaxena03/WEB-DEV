@@ -1,6 +1,6 @@
 BABEL-->it is a compilor which can convert modern js code into native js code and makes code simpler 
 
-JSX->its a method to use react
+JSX->it allows us to write html inside js and vice versa
 
 #USING VERSION 16.11.0
 
