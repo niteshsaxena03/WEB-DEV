@@ -11,3 +11,11 @@ ReactDOM.render(<div>
   <p>your lucky number is {no}</p>
   </div>, 
   document.getElementById("root"));
+
+
+
+ReactDOM.render(<div>
+  <p>CREATED BY {fname +" "+lname}</p>
+  <p>Copyright@{new Date().getFullYear()}</p>
+  </div>, 
+  document.getElementById("root"));
