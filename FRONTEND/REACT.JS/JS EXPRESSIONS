@@ -1,0 +1,13 @@
+#inserting html within js
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const fname="nitesh";
+const lname="saxena";
+const no=6;
+ReactDOM.render(<div>
+  <h1>Hello {fname+" "+lname}</h1>
+  <p>your lucky number is {no}</p>
+  </div>, 
+  document.getElementById("root"));
