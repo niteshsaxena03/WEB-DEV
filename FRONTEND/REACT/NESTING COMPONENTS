@@ -1,0 +1,39 @@
+ import React from "react";
+ import ReactDOM  from "react-dom/client";
+
+ function Greeting(){
+    return (
+      <>
+        <div>
+          <Heading/>
+          <Para/>
+        </div>
+       <List/>
+      </>
+    );
+ }
+ export default Greeting;
+
+ const Heading = () => {
+   return (
+     <h1>this is the header</h1>
+   )
+ }
+ const Para = () => {
+   return (
+    <p>this is the paragraph</p>
+   )
+ }
+ const List = () => {
+   return (
+     <ul>
+       <li>hello baccho</li>
+       <li>chaliye shuru krte hai</li>
+     </ul>
+   );
+ };
+ 
+
+ const root=ReactDOM.createRoot(document.getElementById("root"));
+
+ root.render(<Greeting/>);
