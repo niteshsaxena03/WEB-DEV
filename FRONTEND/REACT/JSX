@@ -1,0 +1,29 @@
+use functions to create elements
+function must return single value
+
+functions must start with capital letters
+
+#sample code
+
+ import React from "react";
+ import ReactDOM  from "react-dom/client";
+
+ function Greeting(){
+    return (
+      <>
+        <div>
+          <h1>HEADER</h1>
+          <h3>hi all</h3>
+        </div>
+        <ul>
+         <li>hello baccho</li>
+         <li>chaliye shuru krte hai</li>
+        </ul>
+      </>
+    );
+ }
+ export default Greeting;
+
+ const root=ReactDOM.createRoot(document.getElementById("root"));
+
+ root.render(<Greeting/>);
