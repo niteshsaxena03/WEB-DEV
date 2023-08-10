@@ -1,0 +1,24 @@
+PROPS ARE USED TO PASS DIFFERENT DATA INTO SAME STRUCTURE COMPONENT
+
+const author = 'Jordan Moore';
+const title = 'Interesting Facts For Curious Minds';
+const img = 'https://m.media-amazon.com/images/I/71nCmmqrbSL._AC_UY436_QL65_.jpg';
+
+function BookList() {
+  return (
+    <section className='booklist'>
+       <Book author={author} title={title} img={img} />
+       <Book author={author} title={title} img={img} />
+       <Book author={author} title={title} img={img} />
+    </section>
+  );
+}
+const Book = () => {
+  return (
+    <article className='book'>
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author} </h4>
+    </article>
+  );
+};
