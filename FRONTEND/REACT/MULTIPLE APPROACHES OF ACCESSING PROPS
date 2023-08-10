@@ -1,0 +1,25 @@
+#CREATING A CONSTANT
+
+const Book = (props) => {
+   console.log(props);
+   const {author,title,img}=props;
+   return (
+     <article className="book">
+       <img src={img} alt={title} />
+       <h2>{title}</h2>
+       <h4>{author} </h4>
+     </article>
+   );
+ }; 
+
+#using directly
+
+ const Book = ({author,title,img}) => {
+  return ( 
+     <article className="book">
+       <img src={img} alt={title} />
+       <h2>{title}</h2>
+       <h4>{author} </h4>
+     </article>
+   );
+ };
