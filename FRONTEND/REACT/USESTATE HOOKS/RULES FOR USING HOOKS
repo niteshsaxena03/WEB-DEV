@@ -1,0 +1,7 @@
+General Rules of Hooks
+
+starts with "use" (both -react and custom hooks)
+component must be uppercase
+invoke inside function/component body
+don't call hooks conditionally (cover later)
+set functions don't update state immediately (cover later)
