@@ -1,0 +1,46 @@
+import { useEffect, useState } from 'react';
+const url = 'https://api.github.com/users/QuincyLarson';
+
+const MultipleReturnsFetchData = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const[isError,setIsError]=useState(false);
+  const [users, setUsers] = useState(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      // done fetching data
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  useEffect(() => {
+    // you can also setup function outside
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const users = await response.json();
+        setUsers(users);
+      } catch (error) {
+        setIsError(true);
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if(isLoading){
+    return  <h2>Loading...</h2>;
+      }
+  if(isError){
+    return <h2>There was an error...</h2>
+  }
+  return (
+    <div>
+      <img src={users.avatar_url} alt={users.name}/>
+      <h2>{users.name}</h2>
+      <h4>WORKS AT</h4>
+      <p>{users.bio}</p>
+    </div>
+  );
+};
+export default MultipleReturnsFetchData;
