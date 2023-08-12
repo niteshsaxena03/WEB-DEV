@@ -1,0 +1,23 @@
+THE ORDER OF STATEMENTS MATTER A LOT IN JS
+
+IT IS IMPORTANT TO PUT ALL THE COMMANDS IN ORDER OTHERWISE JS WILL RETURN AN ERROR
+
+#SAMPLE CODE
+
+const someObject = {
+  name: 'jo koy',
+};
+// this is cool
+someObject.name; // returns 'jo koy'
+someObject.propertyThatDoesNotExist; // returns undefined
+
+// not cool at all, javascript will scream, yell and complain
+const randomValue = null;
+randomValue.name;
+
+// this is ok
+const randomList = [];
+console.log(randomList[0]); // returns undefined
+
+// not cool at all, javascript will scream, yell and complain
+console.log(randomList[0].name);
