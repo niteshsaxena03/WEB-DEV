@@ -1,0 +1,26 @@
+import { useState } from "react";
+import React from "react";
+
+const UseStateGotcha = () => {
+ const [count, setCount] = useState(0);
+
+ const handleClick = () => {
+  setTimeout(()=>{
+     setCount((current)=>{
+      return current+1;
+     })
+  },3000);
+  
+ };
+
+return(
+  <div>
+    <h2>YOU CLICK {count} times</h2>
+    <button type="button" className="btn" onClick={handleClick}>
+      CLICK HERE
+    </button>
+  </div>
+);
+};
+
+export default UseStateGotcha;
