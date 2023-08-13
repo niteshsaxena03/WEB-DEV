@@ -1,0 +1,9 @@
+import { useHook } from 'library';
+
+function Example() {
+  const { data, error, isLoading } = useHook('url', fetcher);
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+  return <div>hello {data.name}!</div>;
+}
