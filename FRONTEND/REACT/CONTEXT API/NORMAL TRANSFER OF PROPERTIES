@@ -1,0 +1,55 @@
+#FIRST FILE
+
+import { useEffect, useRef, useState } from "react";
+import NavLinks from "./NavLinks";
+import React from "react";
+
+const Navbar = () => {
+    const[user,setUser]=useState({name:"bob"});
+    const logout=()=>{
+        setUser(null);
+    };
+  return (
+    <nav className="navbar">
+        <h5>CONTEXT API</h5>
+        <NavLinks user={user} logout={logout}/>
+    </nav>
+  )
+}
+export default Navbar
+
+#SECOND FILE
+
+import UserContainer from "./UserContainer"
+import React from "react"
+const NavLinks = ({user,logout}) => {
+  return (
+    <div className="nav-container">
+        <ul className="nav-links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+        <UserContainer user={user} logout={logout}/>
+    </div>
+  )
+}
+export default NavLinks
+
+#THIRD FILE
+
+const UserContainer = ({user,logout}) => {
+  return (
+    <div className="user-container">
+         {user?(
+            <>
+                 <p>Hello There,{user?.name?.toUpperCase()}</p>
+                 <button className="btn" onClick={logout}>Log Out</button>
+            </>
+         ):(
+           <button className="btn">Log In</button>
+         )}
+       
+    </div>
+  )
+}
+export default UserContainer
