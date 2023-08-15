@@ -1,0 +1,10 @@
+#Install Template
+
+npx create-react-app my-app --template redux
+
+#@latest
+npx create-react-app@latest my-app --template redux
+
+#Existing App
+npm install @reduxjs/toolkit react-redux
+
